@@ -51,3 +51,27 @@ a {
 .navbar-a {
 	color: #FFFFFF;
 }
+
+a:hover {
+	opacity: 0.7;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.section {
+	margin: 50px 0;
+	width:100%;
+}
+
+.section-title {
+	font-size: 32px;
+	color: #800000;
+	margin-bottom:30px;
+}
+
+.section-description {
+	font-size: 14px;
+}
