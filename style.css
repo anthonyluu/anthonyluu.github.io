@@ -23,6 +23,10 @@ a:hover {
 	padding:  30px 80px;
 }
 
+.theme-color {
+	color: #800000;
+}
+
 .left {
 	position: relative;
 	float: left;
