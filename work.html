@@ -43,6 +43,9 @@
         <span class="navbar-links">
           <a class="navbar-a" href="https://git.uwaterloo.ca/a6luu" ><i class="fa fa-gitlab" aria-hidden="true"></i></a>
         </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="mailto:anthonyluu22@gmail.com" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </span>
       </span>
     </div>
   </div>
@@ -53,7 +56,36 @@
           Work Experience
         </div>
         <div class="section-description">
-          <p>Through my career as a developer, I’ve worked in 5 different full time positions. My front end skills were put to the test at my most recent coop where I had to implement a front end feature using a virtual DOM and reactive programming. My code architecture skills were further developed through one of my jobs, as I was put on a project where I was one of the lead developers. I was able to work very closely with a talented designer to build a <b>MEAN</b> app solution from the ground up. In terms of freelance experience, recently, I’ve been working on a solution for a new startup with a talented colleague of mine. We went through a rigorous process of finding a solution for the startup, building pipelines to attract and retain clients, and designing the user experience all from scratch. Through all my experience, I’ve gained a bit of business insight on how a company functions, as well as a lot of technical skill to go with it. In this section, I will be describing my professional work experience. For a more condensed version, you can see my <a href="resume.pdf">resume</a></p>
+          <p>Through my career, I've had 7 internships. Professionally, I started out as a front end developer, but I've been more interested in backend work recently. In this section, I will be describing my professional work experience. For a more condensed version, you can see my <a href="resume.pdf">resume.</a></p>
+        </div>
+
+        <div class="sub-section-title">
+          <b>Backend Software Engineer</b> - Yelp
+        </div>
+        <div class="date-range">
+          September 2017 - December 2017
+        </div>
+        <div class="section-description">
+          <p>My second internship at Yelp was focused on backend work.</p>
+          <p>I mostly worked with data processing on the Transactions team. There were many questions we wanted to answer with our food order data, but they weren't feasible because of the number of slow MySQL database queries that would have to be called to answer those questions. We needed a faster way to provide answers to our users. I worked on a joint project with my mentor called Fast Reorders. We wanted to give useful information to our users about their previous orders, so we utilized <a href="https://engineeringblog.yelp.com/2016/10/redshift-connector.html">Yelp's DataPipeline</a> to take our orders from Kafka and insert them into Elastic Search.</p>
+          <p>I worked on various message processing applications (Yelp calls these "Spolts") that transforms orders in our Kafka topic to something more useful. For example, I wrote a Spolt to take an order, find the latitude and longitude, and then output the new geolocated order back into a downstream Kafka topic. This would be useful to find reorders near a user's location.</p>
+          <p>One other thing that I worked on was an auditing batch that would find missing orders from Elastic Search. It would then proceed to insert the missing orders back into Elastic Search.</p>
+          <p><b class="theme-color">Tools used</b>: Python, Kafka, Elastic Search, Yelp PaaSTorm, Yelp PaaSTA, Git, Splunk, SignalFX</p>
+        </div>
+
+        <div class="sub-section-title">
+          <b>Fullstack Software Engineer</b> - Yelp
+        </div>
+        <div class="date-range">
+          September 2016 - December 2016
+        </div>
+        <div class="section-description">
+          <p>At Yelp, I was on the Transactions team.</p>
+          <p>The Transactions team was responsible for closely connecting users and businesses through delivery and pickup (and other services as well). Third party partners work with us to provide the delivery of the service directly to the customers.</p>
+          <p>During these four months, I refactored our team's frontend pages into our own frontend service. Yelp's codebase was at one point a single monolithic app, and in the last couple of years, there has been a great effort to move parts of that monolithic app into their own separate service to improve scalability. However, most of our team's frontend pages were still stuck in the main Yelp app. We wanted to have our own service so that we could fully control the deployment and development of our own frontend pages.</p>
+          <p>The Transactions team had its own development playground called the Platform Playground. It allows us to test our order flow end to end by creating development docker containers and configuring the ports to point to each other instead of the regular development containers. This allowed us to test new changes in multiple services with little effort, and it allowed for simple acceptance testing as well. The Transactions team had never integrated a frontend service into the playground, so I was responsible for this.</p>
+          <p>This project gave me an opportunity to actually work with every part of the service. I integrated it into the testing suite, wrote docker files, set up dashboards for service monitoring and log ingestion, and refactored the frontend pages.</p>
+          <p><b class="theme-color">Tools used</b>: Python, JS, Git, Docker, Splunk, SignalFX, Yelp PaaSTA, SmartStack</p>
         </div>
 
         <div class="sub-section-title">
@@ -79,7 +111,7 @@
           May 2015 - August 2015
         </div>
         <div class="section-description">
-          <p>I was apart of the Nexj Health team working on a product called Connected Wellness, a wellness solution using wearable technology.</p>
+          <p>I was part of the Nexj Health team working on a product called Connected Wellness, a wellness solution using wearable technology.</p>
           <p>In order to better understand patients, Connected Wellness allowed "Assessments" to be assigned by a health care professional (HCP) so that they can better evaluate the patient's current health. Assessments are pre- and post- clinical surveys that are given to a patient to increase the efficiency of the appointment. Assessments would be scored to determine what state the individual's health is in, and then added to a group according to the results. I mainly worked on the team responsible for making an those assessments. I also implemented most of the scoring logic for the assessments.</p>
           <p>In addition to the assessments, I was able to modify and add mobile responsive features in other parts of the app.</p>
           <p>At Nexj Health, I also spent some time fixing server side issues. I used tools such as Kibana, Fiddler and the Node Inspector to analyze data and various http requests. In order to sufficiently test the security of the app, I needed to intercept http requests, modify the request, and resend it in order to try to use the app in ways it wasn't meant to be used.</p>
