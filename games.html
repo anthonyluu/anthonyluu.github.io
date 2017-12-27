@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+  <title>Anthony Luu</title>
+  <meta name="description" content="Portfolio site outlining various side projects">
+  <meta name="author" content="Anthony Luu">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left navbar-title">
+      Anthony Luu
+    </div>
+    <div class="navbar-bottom navbar-small">
+      <span class="left">
+        Computer Engineer, Software Developer
+      </span>
+      <span class="right">
+        <span>
+          <a class="navbar-a" href="#about" >About</a>
+        </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="#work" >Work</a>
+        </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="#personal" >Personal</a>
+        </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="#hack" >Hack</a>
+        </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="resume.pdf" >Resume</a>
+        </span>
+        <span class="navbar-links">
+          <a class="navbar-a" href="https://github.com/anthonyluu/">Github</a>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="section-title">
+        Games
+      </div>
+      <div class="section-description">
+        <p>In the past few years, I've become very interested in game development. I've mostly used Blender for asset creation and animation, and Unity as the game engine. My interests lie in gameplay programming, particularly with battle systems, combat mechanics, movement mechanics, and physics. I don't have much artistic skill, but animation also interests me.</p>
+        <p>This section will showcase some of the games I've worked on in the past few years.</p>
+      </div>
+    </div>
+    <div id="work">
+      <div class="section">
+        <div class="section-title">
+          Mushroom Jump
+        </div>
+        <div class="section-description">
+          <p>Mushroom Jump was based on the 3D Super Mario games. I thought it was time that the little mushroom creatures took on the spotlight, so I made them the main character of this platformer. The goal is to collect all of the stars. In this game, the mushrooms creatures are your friends, not enemies. Together, you can reach new heights (quite literally).</p>
+        </div>
+
+        <div class="sub-section-title">
+          <b>Controls</b>
+        </div>
+        <div class="section-description">
+          <table class="controls-table">
+            <tr>
+              <td>WASD</td>
+              <td>Move</td>
+            </tr>
+            <tr>
+              <td>IJKL</td>
+              <td>Look</td>
+            </tr>
+            <tr>
+              <th>SPACE</th>
+              <th>Jump</th>
+            </tr>
+            <tr>
+              <th>Q</th>
+              <th>While stacked on top of mushrooms, Q will let you jump off the stack</th>
+            </tr>
+            <tr>
+              <th>U (hold)</th>
+              <th>Grab (you can only grab the boxes)</th>
+            </tr>
+            <tr>
+              <th>ESC</th>
+              <th>Exit</th>
+            </tr>
+          </table>
+
+          <p><b class="theme-color">Tools used</b>: Unity, Blender</p>
+
+          <p>I built this game in Nov 2017 during a Hackathon at work. I was really interested in the stacking mechanic from the most recent Mario game, so I built this game around that game mechanic. Stacking is necessary to reach high places that can't be reached through normal jumping. I built the assets and animated with Blender.</p>
+
+          <p>Check out the code <a class="theme-color" href="https://git.uwaterloo.ca/a6luu/MushroomJump">here.</a></p>
+          <p>Download and play it <a class="theme-color" href="https://drive.google.com/drive/folders/1YCQxJAR95i9rUnvIp1r3cdWIU1gxJt0N?usp=sharing">here.</a></p>
+
+          <h2 class="gif-description">Stack to get higher</h2>
+          <img class="img-gif" src="gifs/mushroomjump_stack.gif">
+
+          <h2 class="gif-description">Grab and move boxes</h2>
+          <img class="img-gif" src="gifs/mushroomjump_hold_box.gif">
+
+          <h2 class="gif-description">Collect all the stars to win!</h2>
+          <img class="img-gif" src="gifs/mushroomjump_collect_stars.gif">
+        </div>
+      </div>
+    </div>
+    <div id="work">
+      <div class="section">
+        <div class="section-title">
+          Rock Paper Scissors
+        </div>
+        <div class="section-description">
+          <p>In Rock Paper Scissors, you are a rock that can magically transform into a paper airplane, or a pair of scissors! The goal is to collect the keys to open the door to the next room. Beware of attacking snails!</p>
+        </div>
+
+        <div class="sub-section-title">
+          <b>Controls</b>
+        </div>
+        <div class="section-description">
+          <table class="controls-table">
+            <tr>
+              <td>WASD</td>
+              <td>Move</td>
+            </tr>
+            <tr>
+              <td>IJKL</td>
+              <td>Look</td>
+            </tr>
+            <tr>
+              <th>SPACE</th>
+              <th>Jump/Fly</th>
+            </tr>
+            <tr>
+              <th>ENTER</th>
+              <th>Attack</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Transform into a rock</th>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th>Transform into a paper airplane</th>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th>Transform into a pair of scissors</th>
+            </tr>
+            <tr>
+              <th>ESC</th>
+              <th>Exit</th>
+            </tr>
+          </table>
+
+          <p><b class="theme-color">Tools used</b>: Unity, Blender</p>
+
+          <p>I built this game over a weekend in May 2017. I was interested in learning how animations worked, so I decided to build a platformer around it. The transformation mechanic was interesting to me, which is why I decided on the Rock Paper Scissors theme. It isn't as clean as Mushroom Jump, but it was a fun game to make. Most of the assets were from the Unity Asset store <a href="https://www.assetstore.unity3d.com/en/#!/content/40756">here.</a> I created and animated the player/enemies, keys, door, and a few more small objects.</p>
+
+          <p>Check out the code <a class="theme-color" href="https://git.uwaterloo.ca/a6luu/RockPaperScissorsGame">here.</a></p>
+          <p>Download and play it (Warning, it's not very polished) <a class="theme-color" href="https://drive.google.com/drive/folders/1kC2OaQFhlwz7YaXlW1TUlsIoNrT1LoFN?usp=sharing">here.</a></p>
+
+          <h2 class="gif-description">Attack enemies</h2>
+          <img class="img-gif" src="gifs/RPS_rock_attack.gif">
+
+          <h2 class="gif-description">Transform and fly</h2>
+          <img class="img-gif" src="gifs/RPS_paper_fly.gif">
+
+          <h2 class="gif-description">Collect all the keys to open the door</h2>
+          <img class="img-gif" src="gifs/RPS_scissors_collect.gif">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

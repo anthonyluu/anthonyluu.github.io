@@ -86,3 +86,21 @@ a:hover {
 	padding-top: 20px;
 	font-size: 18px;
 }
+
+.controls-table {
+	text-align: left;
+}
+
+.controls-table td {
+	padding-right: 40px
+}
+
+.img-gif {
+	display: block;
+	margin: auto;
+}
+
+.gif-description {
+	padding-top: 20px;
+	text-align: center;
+}
